@@ -1,0 +1,123 @@
+{
+    "Title": "Mysterious Museum",
+    "Credits": "Created by Michael McBride (mijamcbr@ucsc.edu).",
+    "InitialLocation": "Janitor's Closet",
+    "Locations": {
+        "Janitor's Closet": {
+            "Body": "You wake up in a Closet full of cleaning supplies. The closet is dark...",
+            "Choices": [
+                {
+                    "Text": "Exit Janitor's Closet",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Hallway": {
+            "Body": "You enter a short hallway; there is only one way to go. You walk down the hallway and approach the door.",
+            "Choices": [
+                {
+                    "Text": "Exit Hallway",
+                    "Target": "Gallery of Paintings"
+                }
+            ]
+        },
+        "Gallery of Paintings": {
+            "Body": "You enter the Gallery of Paintings. All the paintings are crooked... Why are they crooked?",
+            "Choices": [
+                {
+                    "Text": "Straighten Painting",
+                    "Target": "FixPaintings"
+                },
+                {
+                    "Text": "Enter Gallery of Sculptures",
+                    "Target": "Gallery of Sculptures"
+                },
+                {
+                    "Text": "Enter Gallery of Artifacts",
+                    "Target": "Gallery of Artifacts"
+                },
+                {
+                    "Text": "South towards a Balcony",
+                    "Target": "Balcony"
+                }
+            ]
+        },
+        "Gallery of Artifacts": {
+            "Body": "You enter the Gallery of Artifacts. You notice a glisening of purple in the trash can.",
+            "Choices": [
+                {
+                    "Text": "Exit Gallery of Artifacts",
+                    "Target": "Gallery of Paintings"
+                },
+                {
+                    "Text": "Inspect trashcan",
+                    "Target": "Take Glowing Artifact"
+                }
+            ]
+        },
+        "Gallery of Sculptures": {
+            "Body": "You enter the Gallery of Sculptures. The lighting is dim, you can't see much. What you can see is the sculptures. They are tall and made of sandstone; they mimic soldiers.",
+            "Choices": [
+                {
+                    "Text": "Exit Gallery of Sculptures",
+                    "Target": "Gallery of Paintings"
+                }
+            ]
+        },
+        "Balcony": {
+            "Body": "As you approach the balcony railing you notice you can see the front door.",
+            "Choices": [
+                {
+                    "Text": "Try Elevator",
+                    "Target": "Elevator"
+                },
+                {
+                    "Text": "Enter Stairwell",
+                    "Target": "Stairwell"
+                },
+                {
+                    "Text": "Enter Gallery of Paintings",
+                    "Target": "Gallery of Paintings"
+                }
+            ]
+        },
+        "Stairwell": {
+            "Body": "Its just a stairwell...",
+            "Choices": [
+                {
+                    "Text": "Exit back to Balcony",
+                    "Target": "Balcony"
+                },
+                {
+                    "Text": "Walk down the stairs",
+                    "Target": "Entrance"
+                }
+            ]
+        },
+        "Entrance": {
+            "Body": "You're at the Entrance... You notice the front door glows purple.",
+            "Choices": [
+                {
+                    "Text": "Enter Stairwell",
+                    "Target": "Stairwell"
+                },
+                {
+                    "Text": "Try Door",
+                    "Target": "LockedEntrance"
+                }
+            ]
+        },
+        "Elevator": {
+            "Body": "You walk in and the carraige creaks. You press Ground floor... Sparks fly! Hmmm this elevator seems to be broken.",
+            "Choices": [
+                {
+                    "Text": "Exit Elevator",
+                    "Target": "Balcony"
+                }
+            ]
+        },
+        "Beyond": {
+            "Body": "You exit, what a weird experience"
+        }
+    }
+}
